@@ -44,21 +44,22 @@ namespace Labo2
                 Console.WriteLine("\n");
             }
 
-
+            Console.WriteLine("\n");
             //Usando las interfaces
             IMamiferosTerrestres ImiCaballo = Potro;
             ISaltoConPatas ImiCaballoSalto = Potro;
             Console.WriteLine("Numero de patas: "+ ImiCaballo.NumeroPatas());
             Console.WriteLine("Numero de patas en el salto: " + ImiCaballoSalto.NumeroPatas());
+            Console.WriteLine("\n");
 
 
-           
             //Herencia
-            Juan.Respirar();
+
             Juan.GetNombre();
-          
-            Console.WriteLine(Juan.EsHerviboro());
-            Console.WriteLine(Kong.EsHerviboro());
+            Juan.Respirar();
+
+            Console.WriteLine("El humano es herviboro?"+Juan.EsHerviboro());
+            Console.WriteLine("El Gorila es herviboro?"+Kong.EsHerviboro());
         }
    
     }
