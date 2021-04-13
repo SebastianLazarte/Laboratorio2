@@ -6,6 +6,7 @@ namespace Labo2
 {
     class Lagartija : Reptil
     {
+        
         public Lagartija(String nombreLagartija) : base(nombreLagartija)
         {
 
@@ -14,6 +15,9 @@ namespace Labo2
         {
             Console.WriteLine("Pensamiento basico de lagartija");
         }
-
+        public void CambiarDeColor(string color)
+        {
+            Console.WriteLine("Cambiando de color a"+color);
+        }
     }
 }

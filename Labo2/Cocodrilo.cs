@@ -14,6 +14,10 @@ namespace Labo2
         {
             Console.WriteLine("Pensamiento basico de Cocodrilo");
         }
+        public virtual void Desgarrar()
+        {
+            Console.WriteLine("Desgarrando");
+        }
 
     }
 }

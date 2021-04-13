@@ -19,16 +19,24 @@ namespace Labo2
 
             Humano Juan = new Humano("Juan");
 
-            IMamiferosTerrestres ImiCaballo = Potro;
-            ISaltoConPatas ImiCaballoSalto = Potro;
+            //Principio de sustitucion de Liskov
+            Mamifero Persona = new Mamifero("Sebas");
 
-            //Polimorfismo
+            Humano Sebas = new Humano("Sebastian");
+      
+            Persona = Sebas;
+            Persona.GetNombre();
+            Console.WriteLine("Es vegetariano?");
+            Persona.EsHerviboro();
+
+
             Animal[] almacenAnimales = new Animal[5];
             almacenAnimales[0] = Potro;
             almacenAnimales[1] = Juancho;
             almacenAnimales[2] = Kong;
             almacenAnimales[3] = Godzilla;
-            Console.WriteLine("Nombres y tipo de pensamiento");
+            //Polimorfismo
+            Console.WriteLine("Nombres y tipo de pensamiento:::");
             for (int i=0;i<4;i++)
             {
                 almacenAnimales[i].GetNombre();
@@ -37,16 +45,15 @@ namespace Labo2
             }
 
 
-          
-
-            myWally.Nadar();
-
+            //Usando las interfaces
+            IMamiferosTerrestres ImiCaballo = Potro;
+            ISaltoConPatas ImiCaballoSalto = Potro;
             Console.WriteLine("Numero de patas: "+ ImiCaballo.NumeroPatas());
             Console.WriteLine("Numero de patas en el salto: " + ImiCaballoSalto.NumeroPatas());
 
- 
-            
-       
+
+           
+            //Herencia
             Juan.Respirar();
             Juan.GetNombre();
           

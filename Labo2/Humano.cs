@@ -18,5 +18,9 @@ namespace Labo2
         {
             return false;
         }
+        public void Socializar()
+        {
+            Console.WriteLine("Haciendo amigos");
+        }
     }
 }
