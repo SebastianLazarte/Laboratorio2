@@ -26,8 +26,8 @@ namespace Labo2
       
             Persona = Sebas;
             Persona.GetNombre();
-            Console.WriteLine("Es vegetariano?");
-            Persona.EsHerviboro();
+            Console.WriteLine("Es vegetariano?"+ Persona.EsHerviboro());
+         
 
 
             Animal[] almacenAnimales = new Animal[5];
@@ -43,12 +43,13 @@ namespace Labo2
                 almacenAnimales[i].Pensar();
                 Console.WriteLine("\n");
             }
-
+            Godzilla.GetNombre();
+            Godzilla.PonerHuevos();
             Console.WriteLine("\n");
             //Usando las interfaces
             IMamiferosTerrestres ImiCaballo = Potro;
             ISaltoConPatas ImiCaballoSalto = Potro;
-            Console.WriteLine("Numero de patas: "+ ImiCaballo.NumeroPatas());
+            Console.WriteLine("Numero de patas de el Potro: "+ ImiCaballo.NumeroPatas());
             Console.WriteLine("Numero de patas en el salto: " + ImiCaballoSalto.NumeroPatas());
             Console.WriteLine("\n");
 
